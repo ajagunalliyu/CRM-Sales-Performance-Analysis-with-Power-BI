@@ -32,7 +32,7 @@ An end-to-end interactive CRM sales performance dashboard built with Excel, Powe
 
 📄 **Project Report (PDF)**
 
-> reports/CRM Sales Dashboard Report.pdf
+> ![Project Report](https://img.shields.io/badge/Read-Project%20Report-red?logo=adobeacrobatreader)(From_Raw_CRM_Data_to_Business_Decisions.pdf)
 
 📂 **Dataset**
 
