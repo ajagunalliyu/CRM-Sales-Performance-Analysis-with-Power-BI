@@ -12,13 +12,13 @@
 
 An end-to-end interactive CRM sales performance dashboard built with Excel, Power Query, DAX, and Power BI to uncover actionable business insights from over 8,800 sales opportunities.
 
-![](images/dashboard_page1.png)
+![](header)
 
 ## Dashboard
 
 > Experience the dashboard online or explore the project below.
 
-![Executive Dashboard](images/dashboard_page1.png)
+![Executive Dashboard](Executive_Dashboard.png)
 
 ## 🔗 Quick Links
 
@@ -71,13 +71,13 @@ The project follows a complete analytics workflow—from data preparation and mo
 ### Executive Dashboard
 
 
-![Executive Dashboard](images/dashboard_page1.png)
+![Executive Dashboard](Executive_Dashboard.png)
 
 
 ### Detailed Performance Dashboard
 
 
-![Detailed Dashboard](images/dashboard_page2.png)
+![Detailed Dashboard](Detailed_Dashboard.png)
 
 The dashboard was designed for interactive exploration.
 
@@ -218,7 +218,7 @@ Relationships were created to enable interactive filtering across the report.
 
 ## Data Model
 
-![Data Model](images/data_model.png)
+![Data Model](Data_Modelling.png)
 
 
 # 📈 Key DAX Measures
