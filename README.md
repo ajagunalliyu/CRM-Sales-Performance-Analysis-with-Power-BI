@@ -292,7 +292,6 @@ The analysis resulted in several business recommendations.
 
 # 📁 Repository Structure
 
-```
 crm-sales-performance-analysis
 │
 ├── dashboard
@@ -316,9 +315,7 @@ crm-sales-performance-analysis
 │   └── CRM Sales Dashboard Report.pdf
 │
 └── README.md
-```
 
----
 
 # Explore the Project
 
