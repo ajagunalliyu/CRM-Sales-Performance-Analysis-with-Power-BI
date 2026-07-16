@@ -290,33 +290,6 @@ The analysis resulted in several business recommendations.
 - Continue embedding data into strategic decision-making.
 
 
-# 📁 Repository Structure
-
-crm-sales-performance-analysis
-│
-├── dashboard
-│   ├── CRM Sales Dashboard.pbix
-│   ├── dashboard_page1.png
-│   └── dashboard_page2.png
-│
-├── data
-│   ├── accounts.csv
-│   ├── products.csv
-│   ├── sales_pipeline.csv
-│   ├── sales_teams.csv
-│   └── data_dictionary.csv
-│
-├── images
-│   ├── data_model.png
-│   ├── workflow.png
-│   └── dashboard_images...
-│
-├── reports
-│   └── CRM Sales Dashboard Report.pdf
-│
-└── README.md
-
-
 # Explore the Project
 
 ## 🌐 View the Interactive Dashboard
