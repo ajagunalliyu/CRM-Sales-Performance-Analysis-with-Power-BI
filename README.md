@@ -166,9 +166,7 @@ Dashboard Design
 Business Insights
         ↓
 Recommendations
-```
 
----
 
 # 🧹 Data Preparation
 
