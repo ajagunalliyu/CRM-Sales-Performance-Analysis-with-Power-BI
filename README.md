@@ -12,7 +12,7 @@
 
 An end-to-end interactive CRM sales performance dashboard built with Excel, Power Query, DAX, and Power BI to uncover actionable business insights from over 8,800 sales opportunities.
 
-![](header)
+![](header.webp)
 
 ## Dashboard
 
