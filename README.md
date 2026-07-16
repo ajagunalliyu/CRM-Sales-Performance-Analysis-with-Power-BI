@@ -8,7 +8,6 @@
 
 ![DAX](https://img.shields.io/badge/DAX-Measures-0066CC)
 
-![License](https://img.shields.io/badge/License-MIT-blue)
 
 An end-to-end interactive CRM sales performance dashboard built with Excel, Power Query, DAX, and Power BI to uncover actionable business insights from over 8,800 sales opportunities.
 
@@ -32,7 +31,7 @@ An end-to-end interactive CRM sales performance dashboard built with Excel, Powe
 
 📄 **Project Report (PDF)**
 
-> ![Project Report](https://img.shields.io/badge/Read-Project%20Report-red?logo=adobeacrobatreader)(From_Raw_CRM_Data_to_Business_Decisions.pdf)
+> ![Project Report](https://img.shields.io/badge/Read-Project%20Report-red?logo=adobeacrobatreader)([From_Raw_CRM_Data_to_Business_Decisions.pdf](https://drive.google.com/file/d/1-LvXtsrAq5oMthBi1O7fwhplM9GoLs69/view?usp=sharing))
 
 📂 **Dataset**
 
@@ -245,24 +244,21 @@ The first dashboard provides a high-level overview of business performance.
 
 It includes:
 
-- KPI Cards
 - Revenue by Sector
-- Revenue Trend
-- Product Performance
-- Sales Outcome Distribution
-- Interactive Filters
+- Monthly Revenue
+- The Quarter-End Pattern
+- Consultant Performance Matrix (Revenue vs. Win Rate)
+- Sales Cycle Performance (Mean vs. Median)
 
 
 ### Detailed Dashboard
 
 The second dashboard provides operational insights into:
 
-- Consultant Performance
-- Product Analysis
-- Regional Analysis
-- Sales Pipeline
-- Win Rate
-- Opportunity Analysis
+- Revenue by Region
+- Revenue by Company
+- Consultant Leaderboard
+- Revenue by Product Line.
 
 
 # 🔍 Key Insights
@@ -315,7 +311,7 @@ Open the PDF report included in this repository.
 
 Clone the repository.
 
-git clone ...
+git clone https://github.com/ajagunalliyu/CRM-Sales-Performance-Analysis-with-Power-BI.git 
 
 Open the PBIX.
 
