@@ -1,5 +1,7 @@
 # CRM-Sales-Performance-Analysis-with-Power-BI
 
+![Executive Dashboard](assets/Executive_Dashboard.png)
+
 Brainards Group had 8,800 sales opportunities scattered across four disconnected CSV exports, with no way to see which sectors, consultants, or regions were actually driving revenue. I modeled the data into a star schema in Power BI and built a two-page executive dashboard. The headline finding: revenue gaps between sectors and regions come from volume of opportunities, not win rate; this means the fix is pipeline generation, not sales coaching. A small cluster of consultants also generates a disproportionate share of revenue, and one product (GTK 500) commands the highest deal value but also the slowest sales cycle.
 
 ### The Business Problem
@@ -17,6 +19,7 @@ Modeling: star schema in Power BI with Sales Pipeline as fact table, Accounts/Pr
 
 Measures: Total Revenue, Win Rate, Average Deal Size, Average Sales Cycle, Won/Lost/Open Opportunities
 
+![Data Modelling](assets/Data_Modelling.png)
 
 ### Key Insights
 
@@ -31,6 +34,7 @@ Measures: Total Revenue, Win Rate, Average Deal Size, Average Sales Cycle, Won/L
 
 "Sales spike every quarter-end", a recurring seasonal pattern visible in the monthly revenue trend.
 
+![Detailed Dashboard](assets/Detailed_Dashboard.png)
 
 ### Clear Recommendations
 
@@ -49,7 +53,7 @@ Make the dashboard a standing tool in monthly sales reviews rather than a one-of
 Links: [Live dashboard](https://app.powerbi.com/view?r=eyJrIjoiMGIxY2ExMzEtYTM4ZS00NzBiLWE5ZDQtNGM5MzM2MGI2MDI1IiwidCI6ImI2NDU3ZDY4LTQzODgtNGMzYS04MjIyLTc0ZGU0NDU5ZDFlZiJ9&pageName=9f9f3953b30e7aef0e41) · [Medium case study](https://medium.com/@ajagunalliyu/from-raw-crm-data-to-business-decisions-building-a-sales-performance-dashboard-for-brainards-group-335d53110168?sharedUserId=ajagunalliyu)
 
 
-## About Me
+### About Me
 
 Hi, I'm **Alliyu Ajagun**.
 
