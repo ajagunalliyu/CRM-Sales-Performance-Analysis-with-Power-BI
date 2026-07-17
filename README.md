@@ -1,323 +1,41 @@
 # CRM-Sales-Performance-Analysis-with-Power-BI
 
-![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?logo=powerbi&logoColor=black)([view](https://app.powerbi.com/view?r=eyJrIjoiMGIxY2ExMzEtYTM4ZS00NzBiLWE5ZDQtNGM5MzM2MGI2MDI1IiwidCI6ImI2NDU3ZDY4LTQzODgtNGMzYS04MjIyLTc0ZGU0NDU5ZDFlZiJ9&pageName=9f9f3953b30e7aef0e41))
+Brainards Group had 8,800 sales opportunities scattered across four disconnected CSV exports, with no way to see which sectors, consultants, or regions were actually driving revenue. I modeled the data into a star schema in Power BI and built a two-page executive dashboard. The headline finding: revenue gaps between sectors and regions come from volume of opportunities, not win rate; this means the fix is pipeline generation, not sales coaching. A small cluster of consultants also generates a disproportionate share of revenue, and one product (GTK 500) commands the highest deal value but also the slowest sales cycle.
 
-![Medium](https://img.shields.io/badge/Medium-Case%20Study-000000?logo=medium)([view](https://medium.com/@ajagunalliyu/from-raw-crm-data-to-business-decisions-building-a-sales-performance-dashboard-for-brainards-group-335d53110168?sharedUserId=ajagunalliyu))
+### The Business Problem
 
-![Excel](https://img.shields.io/badge/Excel-Data%20Preparation-217346?logo=microsoft-excel)
+Management had no centralized view of performance and couldn't answer basic questions: which sectors generate the most revenue, which consultants and products perform best, which regional office is strongest, or how efficient the sales pipeline is. Decisions were being made on fragmented reports instead of one source of truth.
 
-![DAX](https://img.shields.io/badge/DAX-Measures-0066CC)
+### Data & Method
 
 
-An end-to-end interactive CRM sales performance dashboard built with Excel, Power Query, DAX, and Power BI to uncover actionable business insights from over 8,800 sales opportunities.
+Source: CRM Sales Opportunities dataset (Kaggle) — 4 related tables: Accounts (85 companies), Products (7), Sales Teams (35 consultants), Sales Pipeline (8,800 opportunities)
+Cleaning: consolidated 4 CSVs in Excel, validated dates, checked duplicates, standardized categorical values, preserved open opportunities with blank close dates
+Modeling: star schema in Power BI with Sales Pipeline as fact table, Accounts/Products/Sales Teams/Date as dimensions; custom DAX date table via CALENDARAUTO()
+Measures: Total Revenue, Win Rate, Average Deal Size, Average Sales Cycle, Won/Lost/Open Opportunities
 
-![](header.webp)
 
-## Dashboard
+### Key Insights
 
-> Experience the dashboard online or explore the project below.
 
-![Executive Dashboard](Executive_Dashboard.png)
+"Retail, Technology, and Medical sectors drive the most revenue because they generate the most opportunities, not because they close at a higher rate"; Win rates were similar across sectors; volume is the real lever.
+"A small group of consultants generates a disproportionate share of total revenue"; performance is concentrated, not evenly spread.
+"GTK 500 has the highest average deal value but also the longest sales cycle"; high-value products take longer to close.
+"Regional win rates are nearly identical, so underperforming regions need more opportunities, not more coaching"- reframes the diagnosis from skill gap to pipeline gap.
+"Sales spike every quarter-end", a recurring seasonal pattern visible in the monthly revenue trend.
 
-## 🔗 Quick Links
 
-🌐 **Live Dashboard**
+### Clear Recommendations
 
-> [POWER BI LINK](https://app.powerbi.com/view?r=eyJrIjoiMGIxY2ExMzEtYTM4ZS00NzBiLWE5ZDQtNGM5MzM2MGI2MDI1IiwidCI6ImI2NDU3ZDY4LTQzODgtNGMzYS04MjIyLTc0ZGU0NDU5ZDFlZiJ9&pageName=9f9f3953b30e7aef0e41)
 
-📖 **Medium Case Study**
+Increase opportunity generation in the East region - its ceiling is volume, not conversion skill.
+Study and replicate the specific practices of the top-revenue consultants across the wider team.
+Prioritize go-to-market push behind high-value products, while auditing products with unusually low deal values.
+Flag and monitor long-running open opportunities before they stall the pipeline.
+Make the dashboard a standing tool in monthly sales reviews rather than a one-off analysis.
 
-> [MEDIUM LINK](https://medium.com/@ajagunalliyu/from-raw-crm-data-to-business-decisions-building-a-sales-performance-dashboard-for-brainards-group-335d53110168?sharedUserId=ajagunalliyu)
 
-📄 **Project Report (PDF)**
-
-> ![Project Report](https://img.shields.io/badge/Read-Project%20Report-red?logo=adobeacrobatreader)([From_Raw_CRM_Data_to_Business_Decisions.pdf](https://drive.google.com/file/d/1-LvXtsrAq5oMthBi1O7fwhplM9GoLs69/view?usp=sharing))
-
-📂 **Dataset**
-
-[Dataset Link](https://www.kaggle.com/datasets/innocentmfa/crm-sales-opportunities)
-
-
-## 📖 Project Overview
-
-Organizations generate large volumes of sales data every day, but raw data alone does not drive better decisions. This project demonstrates how Business Intelligence can be used to transform CRM sales records into meaningful insights that support strategic decision-making.
-
-Using a publicly available CRM Sales Opportunities dataset from Kaggle, I developed an interactive Power BI dashboard that analyzes sales performance across consultants, products, customer sectors, and regional offices.
-
-The project follows a complete analytics workflow—from data preparation and modeling to dashboard development and business recommendations, showcasing both technical implementation and business problem-solving.
-
-
-## 📌 Project at a Glance
-
-| Item | Details |
-|------|---------|
-| **Project Type** | Business Intelligence / Sales Analytics |
-| **Industry** | Business Consulting & Professional Services |
-| **Dataset** | CRM Sales Opportunities (Kaggle) |
-| **Sales Opportunities** | 8,800 |
-| **Client Accounts** | 85 |
-| **Sales Consultants** | 35 |
-| **Regional Offices** | 3 |
-| **Products** | 7 |
-| **Tools Used** | Excel, Power Query, DAX, Power BI |
-| **Dashboard Pages** | 2 |
-| **Outcome** | Interactive Executive Dashboard with actionable business insights |
-
----
-
-# 📊 Dashboard Preview
-
-### Executive Dashboard
-
-
-![Executive Dashboard](Executive_Dashboard.png)
-
-
-### Detailed Performance Dashboard
-
-
-![Detailed Dashboard](Detailed_Dashboard.png)
-
-The dashboard was designed for interactive exploration.
-
-Users can filter results by:
-
-- Sales Consultant
-- Manager
-- Product
-- Region
-- Time Period
-
-
-# 🎯 Business Problem
-
-Brainards Group needed a clearer understanding of its sales performance.
-
-Management wanted answers to questions such as:
-
-- Which industry sectors generate the most revenue?
-- Which consultants perform best?
-- Which products contribute the most to sales?
-- Which regional office performs best?
-- How efficient is the sales pipeline?
-- What actions can improve business performance?
-
-Rather than relying on fragmented reports, this project provides a centralized dashboard that supports data-driven decision-making.
-
-
-# ❓ Business Questions
-
-The analysis was guided by six key business questions:
-
-1. Which sectors generate the most revenue, and are we spending our energy in the right places?
-
-2. What actually separates a won deal from a lost one—agent, sector, product, or something else?
-
-3. How long does it really take to close business, and what does that tell us about how we sell?
-
-4. Who are our strongest performers, and how does each consultant compare to the team?
-
-5. Which products generate the most revenue, and how do they contribute to overall sales performance?
-
-6. Which regions contribute the most revenue, and how does performance vary across regions?
-
-
-# 📂 Dataset
-
-This project uses the **CRM Sales Opportunities** dataset available on Kaggle [here](https://www.kaggle.com/datasets/innocentmfa/crm-sales-opportunities).
-
-The dataset contains four related tables.
-
-| Table | Description |
-|---------|------------|
-| Accounts | Company information |
-| Products | Product catalogue |
-| Sales Teams | Sales consultants and managers |
-| Sales Pipeline | Sales opportunities |
-
-
-# 🛠 Tools & Technologies
-
-- Microsoft Excel
-- Power Query
-- Power BI Desktop
-- DAX
-
-
-# 🔄 Project Workflow
-
-The project followed a complete analytics lifecycle.
-
-Business Understanding
-        ↓
-Data Collection
-        ↓
-Excel Data Cleaning
-        ↓
-Power Query Transformation
-        ↓
-Data Modeling
-        ↓
-DAX Measures
-        ↓
-Dashboard Design
-        ↓
-Business Insights
-        ↓
-Recommendations
-
-
-# 🧹 Data Preparation
-
-The raw dataset was provided as four CSV files.
-
-The preparation process included:
-
-- Importing all CSV files into Microsoft Excel
-- Consolidating the files into a single workbook
-- Reviewing data quality
-- Validating dates
-- Checking for duplicates
-- Standardizing categorical values
-- Preserving active sales opportunities with blank close dates
-- Importing the cleaned workbook into Power BI
-
-
-# 📅 Date Table
-
-A dedicated Date Table was created using DAX.
-
-```DAX
-Date Table = CALENDARAUTO()
-```
-
-Additional columns were created to support time intelligence:
-
-- Year
-- Quarter
-- Month Name
-- Month Number
-
-This enabled accurate time-based analysis and chronological reporting throughout the dashboard.
-
-
-# 🧩 Data Modeling
-
-The model follows a **star-schema design**, with the **Sales Pipeline** table serving as the central fact table.
-
-Dimension tables include:
-
-- Accounts
-- Products
-- Sales Teams
-- Date Table
-
-Relationships were created to enable interactive filtering across the report.
-
-
-## Data Model
-
-![Data Model](Data_Modelling.png)
-
-
-# 📈 Key DAX Measures
-
-Examples of measures created include:
-
-- Total Revenue
-- Total Opportunities
-- Won Deals
-- Lost Deals
-- Open Opportunities
-- Win Rate
-- Average Deal Size
-- Average Sales Cycle
-
-These measures dynamically respond to user selections, ensuring every visual updates automatically when filters or slicers are applied.
-
-
-# 📊 Dashboard Features
-
-### Executive Dashboard
-
-The first dashboard provides a high-level overview of business performance.
-
-It includes:
-
-- Revenue by Sector
-- Monthly Revenue
-- The Quarter-End Pattern
-- Consultant Performance Matrix (Revenue vs. Win Rate)
-- Sales Cycle Performance (Mean vs. Median)
-
-
-### Detailed Dashboard
-
-The second dashboard provides operational insights into:
-
-- Revenue by Region
-- Revenue by Company
-- Consultant Leaderboard
-- Revenue by Product Line.
-
-
-# 🔍 Key Insights
-
-Some of the major findings include:
-
-- Retail, Technology, and Medical sectors generated the highest revenue.
-- Revenue differences across sectors were driven primarily by opportunity volume rather than higher win rates.
-- Consultant performance varied significantly, with a small group generating a disproportionate share of total revenue.
-- Regional win rates were remarkably similar, suggesting that lower-performing regions require more opportunities rather than additional sales coaching.
-- GTK 500 recorded the highest average deal value, while also having the longest sales cycle.
-- Revenue was broadly distributed across customer accounts, reducing dependency on a small number of clients.
-- Monthly sales followed a noticeable quarter-end pattern.
-
-
-# 💡 Recommendations
-
-The analysis resulted in several business recommendations.
-
-- Increase opportunity generation within the East region.
-- Capture and replicate the practices of top-performing consultants.
-- Prioritize high-value product strategies.
-- Review products with unusually low deal values.
-- Monitor long-running sales opportunities.
-- Continue embedding data into strategic decision-making.
-
-
-# Explore the Project
-
-## 🌐 View the Interactive Dashboard
-
-Experience the dashboard online.
-
-> [POWER BI LINK](https://app.powerbi.com/view?r=eyJrIjoiMGIxY2ExMzEtYTM4ZS00NzBiLWE5ZDQtNGM5MzM2MGI2MDI1IiwidCI6ImI2NDU3ZDY4LTQzODgtNGMzYS04MjIyLTc0ZGU0NDU5ZDFlZiJ9&pageName=9f9f3953b30e7aef0e41)
-
-
-## 📖 Read the Medium Case Study
-
-A detailed walkthrough of the project.
-
-> [MEDIUM LINK](https://medium.com/@ajagunalliyu/from-raw-crm-data-to-business-decisions-building-a-sales-performance-dashboard-for-brainards-group-335d53110168?sharedUserId=ajagunalliyu)
-
-
-## 📄 Read the Full Report
-
-Open the PDF report included in this repository.
-
-
-## 💻 Run the Project Locally
-
-Clone the repository.
-
-git clone https://github.com/ajagunalliyu/CRM-Sales-Performance-Analysis-with-Power-BI.git 
-
-Open the PBIX.
-
-Refresh.
-
-Explore.
+Links: [Live dashboard](https://app.powerbi.com/view?r=eyJrIjoiMGIxY2ExMzEtYTM4ZS00NzBiLWE5ZDQtNGM5MzM2MGI2MDI1IiwidCI6ImI2NDU3ZDY4LTQzODgtNGMzYS04MjIyLTc0ZGU0NDU5ZDFlZiJ9&pageName=9f9f3953b30e7aef0e41) · [Medium case study](https://medium.com/@ajagunalliyu/from-raw-crm-data-to-business-decisions-building-a-sales-performance-dashboard-for-brainards-group-335d53110168?sharedUserId=ajagunalliyu)
 
 
 # 👨‍💻 About Me
