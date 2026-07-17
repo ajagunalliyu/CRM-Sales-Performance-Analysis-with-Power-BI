@@ -10,8 +10,11 @@ Management had no centralized view of performance and couldn't answer basic ques
 
 
 Source: CRM Sales Opportunities dataset (Kaggle) - 4 related tables: Accounts (85 companies), Products (7), Sales Teams (35 consultants), Sales Pipeline (8,800 opportunities)
+
 Cleaning: consolidated 4 CSVs in Excel, validated dates, checked duplicates, standardized categorical values, preserved open opportunities with blank close dates
+
 Modeling: star schema in Power BI with Sales Pipeline as fact table, Accounts/Products/Sales Teams/Date as dimensions; custom DAX date table via CALENDARAUTO()
+
 Measures: Total Revenue, Win Rate, Average Deal Size, Average Sales Cycle, Won/Lost/Open Opportunities
 
 
