@@ -55,7 +55,7 @@ Links: [Live dashboard](https://app.powerbi.com/view?r=eyJrIjoiMGIxY2ExMzEtYTM4Z
 
 ### About Me
 
-Hi, I'm **Alliyu Ajagun**.
+Hi, I'm **Alliyu Ajagun** known as **Alliyutheanalyst**.
 
 I'm a Data Analyst with a background in Applied Mathematics and a passion for transforming raw data into actionable business insights using Excel, SQL, Python, and Power BI.
 
