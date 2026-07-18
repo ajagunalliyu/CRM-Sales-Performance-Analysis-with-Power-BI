@@ -35,7 +35,6 @@ Management had no centralized view of performance and couldn't answer basic ques
 - Flag and monitor long-running open opportunities before they stall the pipeline.
 - Make the dashboard a standing tool in monthly sales reviews rather than a one-off analysis.
 
-
 Links: [Live dashboard](https://app.powerbi.com/view?r=eyJrIjoiMGIxY2ExMzEtYTM4ZS00NzBiLWE5ZDQtNGM5MzM2MGI2MDI1IiwidCI6ImI2NDU3ZDY4LTQzODgtNGMzYS04MjIyLTc0ZGU0NDU5ZDFlZiJ9&pageName=9f9f3953b30e7aef0e41) · [Medium case study](https://medium.com/@ajagunalliyu/from-raw-crm-data-to-business-decisions-building-a-sales-performance-dashboard-for-brainards-group-335d53110168?sharedUserId=ajagunalliyu)
 
 
